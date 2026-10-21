@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://gtu-paper-hub-diploma.netlify.app/sitemap.xml
