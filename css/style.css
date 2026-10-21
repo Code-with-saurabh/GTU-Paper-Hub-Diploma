@@ -994,6 +994,43 @@ h1, h2, h3, h4, .brand-text strong, .footer-brand, .sheet b, .sem-card .num, .st
   to { transform: translateX(0); opacity: 1; }
 }
 
+/* ---------------- faq ---------------- */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: clamp(20px, 2.6vw, 28px);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item h3 {
+  font-size: clamp(16.5px, 1.7vw, 19px);
+  line-height: 1.4;
+}
+
+.faq-item p {
+  margin-top: 12px;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.faq-item b { color: var(--ink); font-weight: 600; }
+.faq-item a {
+  color: var(--accent-ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+  transition: border-color 0.15s ease;
+}
+.faq-item a:hover { border-color: var(--accent); }
+
 /* ---------------- creator ---------------- */
 .creator { padding-top: 0; }
 
@@ -1082,6 +1119,7 @@ h1, h2, h3, h4, .brand-text strong, .footer-brand, .sheet b, .sem-card .num, .st
   .toolbar-title { min-width: 0; }
   .creator-card { grid-template-columns: 160px 1fr; gap: 26px; }
   .creator-photo { max-width: 160px; }
+  .faq-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
