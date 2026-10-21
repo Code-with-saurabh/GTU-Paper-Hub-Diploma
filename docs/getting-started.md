@@ -8,8 +8,8 @@
 ## 2. Get the code
 
 ```bash
-git clone https://github.com/Code-with-saurabh/-GTU-Paper-Hub.git
-cd -GTU-Paper-Hub
+git clone https://github.com/Code-with-saurabh/GTU-Paper-Hub-Diploma.git
+cd GTU-Paper-Hub-Diploma
 ```
 
 Ya GitHub page se **Code → Download ZIP**.
@@ -53,12 +53,12 @@ Browser me `http://localhost:8000` kholo.
 
 1. Push repo to GitHub (already done for the official repo).
 2. <https://app.netlify.com> → **Add new site → Import an existing project**.
-3. GitHub repo select karo (`Code-with-saurabh/-GTU-Paper-Hub`).
+3. GitHub repo select karo (`Code-with-saurabh/GTU-Paper-Hub-Diploma`).
 4. Settings:
    - **Build command:** *(khaali chhodo)*
    - **Publish directory:** `/` (repo root)
 5. **Deploy.** 30 second me live URL milega, e.g. `https://something.netlify.app`.
-6. (Optional) **Site settings → Change site name** → `gtu-paper-hub`
+6. (Optional) **Site settings → Change site name** → `gtu-paper-hub-diploma`
    → final URL: `https://gtu-paper-hub-diploma.netlify.app`.
 
 > `netlify.toml` pehle se publish dir + cache/security headers set karta hai,

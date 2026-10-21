@@ -5,7 +5,7 @@
 ```
 User action                app.js                      data / network
 ───────────                ──────                      ───────────────
-Page load        →  renderSemGrid()            ←  GTU_CSE.semesters (static)
+Page load        →  renderSemGrid()            ←  GTU_DIPL.semesters (static)
                    applyTheme()               ←  localStorage (theme.js)
 
 Click semester   →  showLoader() (950ms)

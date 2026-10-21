@@ -19,6 +19,6 @@
 
 - **Type:** Static site — no backend, no build step, no npm.
 - **Stack:** Vanilla HTML + CSS + JS.
-- **Live:** <https://gtu-paper-hub.netlify.app/>
-- **Repo:** <https://github.com/Code-with-saurabh/-GTU-Paper-Hub>
+- **Live:** <https://gtu-paper-hub-diploma.netlify.app/>
+- **Repo:** <https://github.com/Code-with-saurabh/GTU-Paper-Hub-Diploma>
 - **Built by:** [Saurabh Sharma](https://saurabhsharma.is-a.dev) ([@Code-with-saurabh](https://github.com/Code-with-saurabh))

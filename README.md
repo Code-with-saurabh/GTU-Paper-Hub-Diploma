@@ -1,4 +1,4 @@
-# -GTU-Paper-Hub
+# GTU-Paper-Hub-Diploma
 
 **Previous year question papers for GTU Diploma Computer Engineering (CSE) students — semester-wise, Summer & Winter, straight from GTU's official archive.**
 
@@ -19,9 +19,9 @@ GTU uploads every exam's question paper as a PDF on `gtu.ac.in`, but finding the
 you need the exact subject code, the exact session string (`S2024`, `W2023`…), and the archive's
 own UI is not student-friendly. This site fixes that:
 
-- **Pick a semester (1–8)** → instantly see every subject of the running CSE syllabus with its
+- **Pick a semester (1–6)** → instantly see every subject of the running diploma syllabus with its
   past 3/4/5 years of Summer + Winter papers.
-- **Search any subject** by *name* ("Operating Systems") or *code* (`3170724`, `BE03000081`) →
+- **Search any subject** by *name* ("Data Structures") or *code* (`4330704`, `DI03000021`) →
   get the last 5 years of papers, **including papers filed under a subject's older codes**
   (GTU renames codes often; the data maps every old code to the current subject).
 - **One click = official PDF.** No re-uploads, no mirror copies, no login. Every button opens the
@@ -38,10 +38,10 @@ own UI is not student-friendly. This site fixes that:
 ## How it works (architecture)
 
 ```
-gtu-paper-hub.netlify.app   ← static site (no backend, no build step)
+gtu-paper-hub-diploma.netlify.app   ← static site (no backend, no build step)
 ├── index.html              ← markup + full SEO head (OG, JSON-LD, canonical…)
 ├── css/style.css           ← all theming via CSS variables (3 palettes × 2 modes)
-├── js/data.js              ← GTU CSE syllabus + paper-availability snapshot (the "database")
+├── js/data.js              ← GTU Diploma (CSE) syllabus + paper-availability snapshot (the "database")
 ├── js/theme.js             ← Appearance panel (palette + light/dark/auto), localStorage
 ├── js/app.js               ← UI logic: semester view, search, filters, live refresh
 ├── assets/                 ← SEO/PWA assets
@@ -87,10 +87,10 @@ sees an error for a network problem.
 Constructed deterministically, no lookup needed:
 
 ```
-https://www.gtu.ac.in/api/v1/question-papers/archive/file/<SESSION>/BE/<SUBJECT_CODE>.pdf
+https://www.gtu.ac.in/api/v1/question-papers/archive/file/<SESSION>/DI/<SUBJECT_CODE>.pdf
 ```
 
-Examples: `…/file/W2024/BE/3170724.pdf`, `…/file/S2025/BE/BE03000081.pdf`
+Examples: `…/file/W2024/DI/4330704.pdf`, `…/file/S2025/DI/DI03000021.pdf`
 
 > The site **never hosts PDFs** — it only deep-links GTU's own archive. Papers remain the
 > property of Gujarat Technological University.
@@ -173,4 +173,4 @@ Just open `index.html` in a browser — no build, no install, no bundler.
 
 ---
 
-<sub>MIT licensed · Made for GTU CSE students who revise the night before. 🙂</sub>
+<sub>MIT licensed · Made for GTU Diploma (CSE) students who revise the night before. 🙂</sub>

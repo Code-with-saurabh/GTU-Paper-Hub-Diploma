@@ -5,7 +5,7 @@ Canonical domain: **`https://gtu-paper-hub-diploma.netlify.app`**
 ## 1. On-page meta (`index.html` head)
 
 - `<title>` — primary keywords + brand (unique, ~60 chars).
-- `meta description` — benefit-driven, includes "BE CSE", "Summer & Winter", "gtu.ac.in" (~155 chars).
+- `meta description` — benefit-driven, includes "Diploma CSE", "Summer & Winter", "gtu.ac.in" (~155 chars).
 - `meta keywords` — GTU-specific long-tails (secondary signal).
 - `meta author` — **Saurabh Sharma**.
 - `meta robots` — `index, follow, max-image-preview:large, max-snippet:-1`.
@@ -62,7 +62,7 @@ Validate: <https://validator.schema.org/> ya Rich Results Test.
 
 ## 8. Content SEO moat (kyun rank ho sakta hai)
 
-- Specific intent: "GTU CSE <subject> previous year paper" queries pe *direct answer*.
+- Specific intent: "GTU Diploma CSE <subject> previous year paper" queries pe *direct answer*.
 - Old-code mapping = long-tail coverage jo koi aur nahi deta.
 - Freshness: exam-season sync + `lastmod`.
 - Original design + real utility = dwell time + shares in college WhatsApp groups (off-site SEO signal).

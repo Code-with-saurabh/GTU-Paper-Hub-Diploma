@@ -26,7 +26,7 @@ window.GTU_DIPL = {
     ...
   },
 
-  // Running CSE (BE) syllabus, synced Oct 2026
+  // Running Diploma (CSE) syllabus, synced Oct 2026
   semesters: [
     {
       sem: 1,
@@ -37,12 +37,14 @@ window.GTU_DIPL = {
       subjects: [
         {
           name: "Mathematics - I",
-          code: "BE01R00041",       // current code
-          kind: "core",             // core | elective | audit | project | mooc
-          codes: [                  // current + saare purane codes
-            "BE01R00041",
-            "BE01000041",
-            "3110014"
+          code: "DI01C00021",         // current code
+          kind: "core",               // core | elective | audit | project | mooc
+          codes: [                    // current + saare purane codes
+            "DI01C00021",
+            "DI01000021",
+            "C4300001",
+            "4300001",
+            "310034"
           ]
         },
         ...
@@ -55,7 +57,7 @@ window.GTU_DIPL = {
 
 ### `codes[]` kyun zaroori hai?
 
-GTU subject ka code time ke saath badalta hai (e.g. `3110014` → `BE01000041` → `BE01R00041`).
+GTU subject ka code time ke saath badalta hai (e.g. `310034` → `4300001` → `DI01000021` → `DI01C00021`).
 Purane exam PDFs *purane code* ke neeche filed hote hain. `codes[]` me saare codes rakhne se
 purane papers bhi aaj ke subject naam ke neeche mil jaate hain — search bhi isi list pe chalta hai.
 
@@ -116,8 +118,8 @@ Koi extra lookup nahi — URL deterministic hai:
 Examples:
 
 ```
-https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2024/DI/3170724.pdf
-https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2025/DI/BE03000081.pdf
+https://www.gtu.ac.in/api/v1/question-papers/archive/file/W2017/DI/3330704.pdf
+https://www.gtu.ac.in/api/v1/question-papers/archive/file/S2026/DI/DI01C00021.pdf
 ```
 
 `paperButton()` ise `target="_blank"` anchor me lagata hai + toast dikhata hai.
@@ -139,7 +141,7 @@ archive me subject ke liye *kaunse* sessions available hain (user ko hint milta 
 
 Har exam season ke baad:
 
-1. Har BE subject code pe `archive/search` call karo (`course=DI&page_size=50`).
+1. Har Diploma subject code pe `archive/search` call karo (`course=DI&page_size=50`).
 2. `data.papers[].session` collect karke `snapshot[code]` update karo.
 3. Naye syllabus ke naye codes add karo, purane `codes[]` me rakho.
 4. `sessions` array me naya session prepend karo (e.g. `S2027`).
